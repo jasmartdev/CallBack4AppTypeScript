@@ -26,7 +26,7 @@ export default {
         "body": "{\"operationName\":\"triggerManualDeployment\",\"variables\":{\"serviceEnvironmentId\":\"0ddc4dd8-3dea-40c7-9e9b-dd80012f5f0b\"},\"query\":\"mutation triggerManualDeployment($serviceEnvironmentId: String!) {\\n  triggerManualDeployment(serviceEnvironmentId: $serviceEnvironmentId) {\\n    id\\n    status\\n    result\\n    error {\\n      message\\n      code\\n      __typename\\n    }\\n    __typename\\n  }\\n}\"}",
         "method": "POST"
       });
-      
+
       await fetch("https://api.containers.back4app.com/", {
         "headers": {
           "accept": "*/*",
